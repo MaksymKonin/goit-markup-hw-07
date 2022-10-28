@@ -1,0 +1,24 @@
+.hero {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero__title {
+  margin: 0 auto 30px auto;
+  max-width: 696px;
+  @include font(900, 44, 1.36, 0.06);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}

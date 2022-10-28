@@ -1,0 +1,32 @@
+.logo {
+  font-family: "Raleway", sans-serif;
+  @include font(700, 26, 1.19, 0.03);
+  color: var(--accent-color);
+}
+
+.navigation__logo {
+  margin-right: 93px;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo__word {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .logo:focus &,
+  .logo:hover & {
+    color: var(--accent-color);
+  }
+}
+
+.logo__word--black {
+  color: #000000;
+}
+
+.logo__word--white {
+  color: var(--second-text-color);
+}

@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./utils/hiden";
+
+@import "./base/reset";
+@import "./base/common";
+
+@import "./components/conteiner";
+@import "./components/flex-container";
+@import "./components/section-title";
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/soc";
+@import "./components/btn-gallery";
+@import "./components/modal";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/activity";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/gallery";

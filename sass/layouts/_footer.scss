@@ -1,0 +1,113 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list__item {
+  font-style: normal;
+  @include font(400, 14, 1.71, 0.03);
+  margin-bottom: 9px;
+  width: 231px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-list__address {
+  color: var(--second-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.footer-list__link {
+  color: rgba(255, 255, 255, 0.6);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.footer-soc {
+  margin-left: 70px;
+}
+
+.footer-soc__heading {
+  @include font(700, 14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.footer-form {
+  margin-left: auto;
+}
+
+.footer-form__heading {
+  @include font(700, 14, 1.14, 0.03);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+}
+
+.footer-form__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscription-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.subscription-wrap__input {
+  width: 358px;
+  height: 50px;
+  @include font(400, 16, 1.25, 0.03);
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 16px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+}
+
+.subscription-wrap__btn {
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscription-wrap__icon {
+  fill: var(--second-text-color);
+}
